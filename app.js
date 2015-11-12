@@ -50,7 +50,7 @@ server.on('request', function (req, res) {
 	var body = getRandomWord()
 	res.writeHead(200, {
 		'Content-Length': body.length,
-	  'Content-Type': 'text/plain'
+		'Content-Type': 'text/plain'
 	});
 
 	res.end(body, 'utf-8');
